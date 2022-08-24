@@ -13,6 +13,9 @@ pipeline {
       steps {
         container('atlas-sdk') {
           script {
+            sh 'whoami'
+//            sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
+//            sh 'cat ~/.ssh/known_hosts'
             sh 'atlas-mvn clean deploy -s /usr/src/mvn/settings.xml'
           }
         }
