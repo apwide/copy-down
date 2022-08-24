@@ -17,7 +17,8 @@
   <packaging>jar</packaging>
 
   <scm>
-    <connection>https://github.com/apwide/copy-down.git</connection>
+    <connection>scm:git:https://github.com/apwide/copy-down.git</connection>
+    <developerConnection>scm:git:https://github.com/apwide/copy-down.git</developerConnection>
 <!--    <connection>scm:git:ssh://git@github.com/apwide/copy-down.git</connection>-->
 <!--    <developerConnection>scm:git:ssh://git@github.com/apwide/copy-down.git</developerConnection>-->
     <url>https://github.com/apwide/copy-down</url>
