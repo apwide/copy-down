@@ -242,6 +242,15 @@ public class CopyDown {
                 }
                 return "["+ content + "](" + href + title + ")";
             }));
+            addRule("slackInlineLink", new Rule((element) -> {
+                return options.linkStyle == LinkStyle.SLACK_INLINED
+                        && element.nodeName().equals("a")
+                        && element.attr("href").length() != 0;
+            }, (content, element) -> {
+                String href = element.attr("href");
+                content = content.replaceAll("\\\\\\[", "[").replaceAll("\\\\]", "]");
+                return "<" + href + "|"+ content + ">";
+            }));
             addRule("referenceLink", new Rule((element) -> {
                 return options.linkStyle == LinkStyle.REFERENCED
                        && element.nodeName().equals("a")

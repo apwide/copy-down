@@ -50,6 +50,9 @@ class CopyDownTest {
                     }
                 }
             }
+            if (options.has("linkStyle") && options.get("linkStyle").getAsString().equals("slackInlined")) {
+                optionsBuilder.withLinkStyle(LinkStyle.SLACK_INLINED);
+            }
             if (options.has("codeBlockStyle") && options.get("codeBlockStyle").getAsString().equals("fenced")) {
                 optionsBuilder.withCodeBlockStyle(CodeBlockStyle.FENCED);
                 if (options.has("fence")) {

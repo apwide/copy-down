@@ -73,17 +73,17 @@ public class Main {
 ```
 
 
-| Option                | Valid values  | Default |
-| :-------------------- | :------------ | :------ |
-| `headingStyle`        | `SETEXT` or `ATX` | `SETEXT`  |
+| Option                | Valid values                                                           | Default |
+| :-------------------- |:-----------------------------------------------------------------------| :------ |
+| `headingStyle`        | `SETEXT` or `ATX`                                                      | `SETEXT`  |
 | `hr`                  | Any [Thematic break](http://spec.commonmark.org/0.27/#thematic-breaks) | `* * *` |
-| `bulletListMarker`    | `-`, `+`, or `*` | `*` |
-| `codeBlockStyle`      | `INDENTED` or `FENCED` | `INDENTED` |
-| `fence`               | ` ``` ` or `~~~` | ` ``` ` |
-| `emDelimiter`         | `_` or `*` | `_` |
-| `strongDelimiter`     | `**` or `__` | `**` |
-| `linkStyle`           | `INLINED` or `REFERENCED` | `INLINED` |
-| `linkReferenceStyle`  | `FULL`, `COLLAPSED`, or `SHORTCUT` | `FULL` |
+| `bulletListMarker`    | `-`, `+`, or `*`                                                       | `*` |
+| `codeBlockStyle`      | `INDENTED` or `FENCED`                                                 | `INDENTED` |
+| `fence`               | ` ``` ` or `~~~`                                                       | ` ``` ` |
+| `emDelimiter`         | `_` or `*`                                                             | `_` |
+| `strongDelimiter`     | `**` or `__`                                                           | `**` |
+| `linkStyle`           | `INLINED`, `REFERENCED` or `SLACK_INLINED`                             | `INLINED` |
+| `linkReferenceStyle`  | `FULL`, `COLLAPSED`, or `SHORTCUT`                                     | `FULL` |
 
 
 ### Acknowledgment

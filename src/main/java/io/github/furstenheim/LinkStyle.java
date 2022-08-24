@@ -2,5 +2,6 @@ package io.github.furstenheim;
 
 public enum LinkStyle {
     INLINED,
-    REFERENCED;
+    REFERENCED,
+    SLACK_INLINED;
 }
