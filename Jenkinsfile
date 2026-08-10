@@ -1,3 +1,3 @@
 @Library('apwide-ci-shared-library') _
 
-apwMvn([agent: "ci-github-ssh-credentials"])
+apwMvn([sshAgent: "ci-github-ssh-credentials"])
